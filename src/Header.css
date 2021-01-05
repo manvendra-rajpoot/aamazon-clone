@@ -49,7 +49,7 @@
     color: white;
 }
 .header__orderCounts{
-    color: #e9a44a;
+    color: #ffb34f;
 }
 .header__optionLineOne{
     font-size: 12px;
@@ -57,4 +57,9 @@
 .header__optionLineTwo{
     font-size: 15px;
     font-weight: 700;
+}
+@media (max-width: 990px) {
+    .header__searchInput {
+        width: 100%;
+    }
 }
