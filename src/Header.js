@@ -3,11 +3,15 @@ import './Header.css';
 import SearchIcon from '@material-ui/icons/Search';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import LocationOnIcon from '@material-ui/icons/LocationOn';
+import { Link } from 'react-router-dom';
 
 function Header() {
     return (
         <div className='header'>
-            <img className='header__logo' src='http://pngimg.com/uploads/amazon/amazon_PNG11.png' alt='aamazon' />
+            <Link to='/'>
+                <img className='header__logo' src='http://pngimg.com/uploads/amazon/amazon_PNG11.png' alt='aamazon' />
+            </Link>
+            
 
             <div className="header__nav">
                 <LocationOnIcon className=' header__option header__locationIcon' style={{marginRight:'-15px',marginLeft:'-10px'}} />
@@ -49,8 +53,9 @@ function Header() {
                         Prime
                     </span>
                 </div>
-
-                <ShoppingCartIcon className="header__option" />
+                <Link to='/checkout'>
+                    <ShoppingCartIcon className="header__option" />
+                </Link>
                 <div className="header__option" style={{marginLeft:'-6px'}}>
                     <span className="header__optionLineTwo header__orderCounts">
                         4

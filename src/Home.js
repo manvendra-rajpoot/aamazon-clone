@@ -23,7 +23,7 @@ function Home() {
                     
                     <Product image='https://images-eu.ssl-images-amazon.com/images/I/81l3rZK4lnL._AC_UL200_SR200,200_.jpg'title='Ikigai: The Japanese secret to a long and happy life ' price={5.01} rating={4} />
 
-                    <Product image='https://images-eu.ssl-images-amazon.com/images/I/710jnzKlDTL._AC_UL200_SR200,200_.jpg'title='Attitude Is Everything: Change Your Attitude ... Change Your Life! by Keller Jeff' price={5.29} rating={3} />
+                    <Product image='https://images-eu.ssl-images-amazon.com/images/I/710jnzKlDTL._AC_UL200_SR200,200_.jpg'title='Attitude Is Everything: Change Your Attitude, Change Your Life! by Keller Jeff' price={5.29} rating={3} />
                     
                     <Product image='https://images-eu.ssl-images-amazon.com/images/I/41p1cRZGtaL._AC_SX184_.jpg' title='Cracking the Coding Interview (Indian Edition)' price={4.99} rating={5} />
                     
