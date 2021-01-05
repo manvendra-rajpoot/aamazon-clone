@@ -2,12 +2,15 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 300px;
+    width: 280px;
     height: 100px;
-    padding: 20px;
+    padding: 18px;
     background-color: #f3f3f3;
     border: 1px solid #c5c3c3;
     border-radius: 5px;
+}
+.subtotal>p>strong{
+    font-family: monospace;
 }
 .subtotal__gift{
     display: flex;

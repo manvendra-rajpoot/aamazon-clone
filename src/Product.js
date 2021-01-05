@@ -1,7 +1,26 @@
 import React from 'react';
 import './Product.css';
+import { useStateValue } from './StateProvider';
 
-function Product({image, title, price, rating}) {
+function Product({id, image, title, price, rating}) {
+
+    const [{cart}, dispatch] = useStateValue();
+    console.log('This is MYCART-->>',cart);
+    
+    const addToCart = () => {
+        //dispatch item in data layer
+        dispatch({
+            type: 'ADD_TO_CART',
+            item: {
+                id: id,
+                image: image,
+                title: title,
+                price: price,
+                rating: rating,
+            },
+        })
+    }
+
     return (
         <div className='product'>
             <img src={image} alt='productImage' />
@@ -18,7 +37,7 @@ function Product({image, title, price, rating}) {
                 </div>
             </div>
 
-            <button>Add to Cart</button> 
+            <button onClick={addToCart}>Add to Cart</button> 
         </div>
     )
 }
