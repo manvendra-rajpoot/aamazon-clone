@@ -30,15 +30,17 @@ function Header() {
                 </div>
 
                 <Searchbar />
-
-                <div className="header__option">
-                    <span className="header__optionLineOne">
+                
+                <Link to='/login'>
+                    <div className="header__option">
+                        <span className="header__optionLineOne">
                         Hello, Sign in
-                    </span>
-                    <span className="header__optionLineTwo">
+                        </span>
+                        <span className="header__optionLineTwo">
                         Account & Lists
-                    </span>
-                </div>
+                        </span>
+                    </div>
+                </Link>
 
                 <div className="header__option">
                     <span className="header__optionLineOne">

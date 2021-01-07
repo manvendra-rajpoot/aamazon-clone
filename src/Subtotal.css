@@ -33,5 +33,5 @@
 .subtotal>button:hover{
     background-color: #f5b81e;
     transition: transform 0.2s ease-in;
-    transform: scale(1.03);
+    transform: scale(1.01);
 }

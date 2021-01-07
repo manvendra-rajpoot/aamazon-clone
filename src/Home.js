@@ -51,6 +51,7 @@ function Home() {
                 <div className="home__row">
                     <Product id='55511' image='https://m.media-amazon.com/images/I/61k+sjmUURL._AC_UL480_FMwebp_QL65_.jpg' title='Furny MultiStyle 7 Seater L-Shape Sofa - RHS (3 Seater + 2 Seater + 2 Puffy) Combo (Beige-Brown)' price={297.29} rating={4} />
                     <Product id='55587' image='https://m.media-amazon.com/images/I/81yi5l+U4LL._AC_UL480_FMwebp_QL65_.jpg' title='SofaArchitect (3 Years Warranty) Chilly 5 Seater 3+2 Fabric Sofa Set (Blue)' price={409.59} rating={4} />
+                    <Product id='55501' image='https://m.media-amazon.com/images/I/41bcNmLsB3L._AC_SR160,160_.jpg' title='MISURAA Imported Xenon Mid Back Ergonomic Chair for Office & Home' price={23.59} rating={5} />
                 </div>
 
                 
