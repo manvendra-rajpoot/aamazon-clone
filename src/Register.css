@@ -1,10 +1,10 @@
-.login{
+.register{
     background-color: #fdfeff;
     align-items: center;
     display: flex;
     flex-direction: column;
 }
-.login__logo{
+.register__logo{
     margin: 20px;
     margin-bottom: 20px;
     object-fit: contain;
@@ -12,7 +12,7 @@
     margin-right: auto;
     margin-left: auto;
 }
-.login__container{
+.register__container{
     color: #111;
     width: 300px;
     height: fit-content;
@@ -24,14 +24,14 @@
     border-radius: 6px;
     margin-bottom: 5px;
 }
-.login__container>h2{
+.register__container>h2{
     font-weight: 400;
     margin-bottom: 20px;
 }
-.login__container>form>h6{
+.register__container>form>h6{
     margin-bottom: 4px;
 }
-.login__container>form>input{
+.register__container>form>input{
     height: 20px;
     padding: 6px;
     margin-bottom: 10px;
@@ -40,14 +40,10 @@
     border-radius: 5px;
     outline-width: 0;
 }
-.login__container>form>input:hover{
-    box-shadow: 0 1px 2px 0 rgba(255, 174, 23, 0.815), 0 1px 2px 0 rgba(221, 151, 20, 0.74);
+.register__container>form>input:hover{
+    box-shadow: 0 1px 2px 0 rgba(247, 187, 59, 0.705), 0 1px 2px 0 rgba(226, 178, 18, 0.74);
 }
-.login__container>p{
-    margin-top: 15px;
-    font-size: 12px;
-}
-.login__signInButton{
+.register__container>form>button{
     height: 30px;
     width: 100%;
     background-color: #f0c14b;
@@ -58,24 +54,36 @@
     color: #111;
     cursor: pointer;
 }
-.login__signInButton:hover{
+.register__container>form>button:hover{
     background-color: #f5b81e;
     transition: transform 0.2s ease-in;
     transform: scale(1.01);
 }
-.login>p{
-    color: gray;
-    font-size: xx-small;
+.register>p{
+    color: rgb(105, 105, 105);
+    font-size: 0.65em;
     padding: 10px;
-    margin-top: 10px;
+    margin-bottom: 10px;
 }
-.login>button{
-    height: 30px;
-    width: 300px;
-    background-color: #dbd9d4;
-    border: 1px solid;
+.mobNumber{
+    display: flex;
+}
+.mobNumber>input{
+    height: 20px;
+    padding: 6px;
+    margin-bottom: 10px;
+    background-color: white;
     border-radius: 5px;
-    margin-bottom: 20px;
-    color: #111;
-    cursor: pointer;
+    outline-width: 0;
+}
+.mobNumber>input:hover{
+    box-shadow: 0 1px 2px 0 rgba(247, 187, 59, 0.705), 0 1px 2px 0 rgba(226, 178, 18, 0.74);
+}
+.countryCode{
+    margin-right: 12px;
+    width: 25%;
+}
+.tenDigits{
+    margin-left: 12px;
+    width: 75%;
 }

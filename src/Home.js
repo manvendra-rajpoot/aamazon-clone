@@ -3,11 +3,13 @@ import './Home.css';
 import Product from './Product';
 
 function Home() {
+
     return (
         <div className='home'>
             <div className="home__container">
                 <img className='home__image' src='https://images-eu.ssl-images-amazon.com/images/G/31/img20/1499/GW/Hero/MSO/ENG/HIN/Updated/Header_1500x600._CB412497578_.jpg' 
                 alt='home banner'/>
+                
 
                 <div className="home__row">
                     <Product id='11175' image='https://images-eu.ssl-images-amazon.com/images/G/31/img20/PC/Accessories/Cloud_Core_7.1Cloud_Core_7.1_-Just_launched.jpg' title='HyperX Cloud Core + 7.1 Gaming Headset for PC, PS4, Xbox One, Nintendo Switch, and Mobile Devices (HX-HSCC-2-BK/WW)' price={87.99} rating={5} />
@@ -53,8 +55,6 @@ function Home() {
                     <Product id='55587' image='https://m.media-amazon.com/images/I/81yi5l+U4LL._AC_UL480_FMwebp_QL65_.jpg' title='SofaArchitect (3 Years Warranty) Chilly 5 Seater 3+2 Fabric Sofa Set (Blue)' price={409.59} rating={4} />
                     <Product id='55501' image='https://m.media-amazon.com/images/I/41bcNmLsB3L._AC_SR160,160_.jpg' title='MISURAA Imported Xenon Mid Back Ergonomic Chair for Office & Home' price={23.59} rating={5} />
                 </div>
-
-                
 
             </div>            
         </div>

@@ -15,9 +15,11 @@
     padding: 10px;
     border-bottom: 1px solid lightgrey;
 }
+.checkout__userName{
+    padding: 10px;
+}
 .checkout__left{
     flex: 1;
-    padding-left: 8px;
     margin-right: 15px;
     background-color: #f3f3f3;
     border: 1px solid #c5c3c3;

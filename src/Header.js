@@ -5,10 +5,17 @@ import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import LocationOnIcon from '@material-ui/icons/LocationOn';
 import { Link } from 'react-router-dom';
 import { useStateValue } from './StateProvider';
+import { auth } from './firebase';
 
 function Header() {
 
-    const [{cart}, dispatch] = useStateValue();
+    const [{cart,user}, dispatch] = useStateValue();
+
+    const handleAuth = () => {
+        if(user){
+            auth.signOut();
+        }
+    }
 
     return (
         <div className='header'>
@@ -16,28 +23,29 @@ function Header() {
                 <img className='header__logo' src='http://pngimg.com/uploads/amazon/amazon_PNG11.png' alt='aamazon' />
             </Link>
             
-
             <div className="header__nav">
                 <LocationOnIcon className=' header__option header__locationIcon' style={{marginRight:'-15px',marginLeft:'-10px'}} />
 
-                <div className="header__option">
+                <div className="header__option">    
                     <span className="header__optionLineOne">
                         Hello
                     </span>
-                    <span className="header__optionLineTwo">
+                    <span span className="header__optionLineTwo">
                         Select your address
                     </span>
                 </div>
 
-                <Searchbar />
-                
-                <Link to='/login'>
-                    <div className="header__option">
+            </div>
+            <Searchbar />
+
+            <div className="header__nav">
+                <Link to={!user && '/login'}>
+                    <div onClick={handleAuth} className="header__option">
                         <span className="header__optionLineOne">
-                        Hello, Sign in
+                        Hello, {user? user?.email : 'Guest' }
                         </span>
                         <span className="header__optionLineTwo">
-                        Account & Lists
+                        {user?'Sign Out':'Sign In'}
                         </span>
                     </div>
                 </Link>
@@ -51,14 +59,6 @@ function Header() {
                     </span>
                 </div>
 
-                <div className="header__option">
-                    <span className="header__optionLineOne">
-                        Your
-                    </span>
-                    <span className="header__optionLineTwo">
-                        Prime
-                    </span>
-                </div>
                 <Link to='/checkout'>
                     <ShoppingCartIcon className="header__option" />
                 </Link>
